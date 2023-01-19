@@ -1,3 +1,18 @@
+﻿/**
+*
+* Solution to course project # <5>
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2022/2023
+*
+* @author <Dobromir Peev>
+* @idnumber <4MI0600262>
+* @compiler <VC>
+*
+* <Запазва студентска информация на 8 по групи и може да сортира тази информация по фак. номер и среден успех>
+*
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -45,7 +60,6 @@ bool CheckWord(string filename, string search)
 	string line;
 	ifstream Myfile;
 	Myfile.open(filename);
-
 	if (Myfile.is_open())
 	{
 		while (!Myfile.eof())
